@@ -1,8 +1,5 @@
 GRC::Application.routes.draw do
 
- 
-
-  
   resources :rcrievals
 
 
@@ -52,7 +49,7 @@ GRC::Application.routes.draw do
 get "log_in" => "sessions#new", :as => "log_in"
 get "sign_up" => "users#new", :as => "sign_up"
 
-match "ainits/index" => "ainits#index"
+# match "ainits/index" => "ainits#index"
 match "question/new" => "question#new"
   # The priority is based upon order of creation:
   # first created -> highest priority.
